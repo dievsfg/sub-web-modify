@@ -970,8 +970,7 @@ export default {
 
       let data = {"url":"http://zgb01.f3322.net:25500/sub?target=clash&url=httpt=false&hfghgtyututunew_name=true"};
 
-      this.$axios
-        .post(duan, data, {
+      axios.post(duan, data, {
           header: {
             "Content-Type": "application/json"
           }
