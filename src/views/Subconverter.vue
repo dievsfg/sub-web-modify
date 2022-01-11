@@ -696,7 +696,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "http://zgb01.f3322.net:25500/sub?",
-        shortType: "https://v1.mk/short",
+        shortType: "https://sl.diev.ml",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
         includeRemarks: "",
@@ -968,13 +968,12 @@ export default {
       
       this.loading = true;
 
-      let data = new FormData();
-      data.append("longUrl", btoa(this.customSubUrl));
+      let data = "\"url\":\"+this.customSubUrl+\"";
 
       this.$axios
         .post(duan, data, {
           header: {
-            "Content-Type": "application/form-data; charset=utf-8"
+            "Content-Type": "text/html;charset=UTF-8"
           }
         })
         .then(res => {
