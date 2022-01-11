@@ -306,6 +306,7 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
+         "自建":"https://sl.diev.ml",
          "v1.mk":"https://v1.mk/short",
          "d1.mk":"https://d1.mk/short",
          "dlj.tf":"https://dlj.tf/short",
@@ -694,9 +695,9 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://api.v1.mk/sub?",
+        customBackend: "http://zgb01.f3322.net:25500/sub?",
         shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/Area_Media_NoAuto.ini",
+        remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
