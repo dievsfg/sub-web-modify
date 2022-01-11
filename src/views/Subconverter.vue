@@ -313,7 +313,7 @@ export default {
          "sub.cm":"https://sub.cm/short",
         },
         customBackend: {
-	  "N1搭建":"http://zgb01.f3322.net:25500/sub?",
+          "N1搭建":"http://zgb01.f3322.net:25500/sub?",
           "肥羊增强型后端【负载均衡】":"https://api.v1.mk/sub?",
           "sub-web作者提供": "https://api.wcc.best/sub?",
           "nameless13提供":"https://www.nameless13.com/sub?",
@@ -322,7 +322,7 @@ export default {
           "品云提供": "https://sub.id9.cc/sub?",
         },
         backendOptions: [
-	  { value: "http://zgb01.f3322.net:25500/sub?" },
+          { value: "http://zgb01.f3322.net:25500/sub?" },
           { value: "https://api.v1.mk/sub?" },
           { value: "https://api.wcc.best/sub?" },
           { value: "https://www.nameless13.com/sub?" },
