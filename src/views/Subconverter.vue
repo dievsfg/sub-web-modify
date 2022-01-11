@@ -968,7 +968,7 @@ export default {
       
       this.loading = true;
 
-      let data = "\"url\":\"+this.customSubUrl+\"";
+      let data = "\"url\":\"'http://zgb01.f3322.net:25500/sub?target=clash&url=http%3A%2F%2Fzgb01.f3322.net%3A25500%2Fsub%3Ftarget%3Dclash%26url%3Dhttps%253A%252F%252Fwww.google.com.hk%252Fsearch%253Fq%253Dinurl%25253Aclash%25252Fproxies%2526ei%253DT53RYZbXHtv7-Qb9nIfgCA%2526ved%253D0ahUKEwjWuvm0i5P1AhXbfd4KHX3OAYwQ4dUDCA4%2526uact%253D5%2526oq%253Dinurl%25253Aclash%25252Fproxies%2526gs_lcp%253DCgdnd3Mtd2l6EANKBAhBGAFKBAhGGABQAFgAYMoOaAFwAHgAgAEAiAEAkgEAmAEAwAEB%2526sclient%253Dgws-wiz%26insert%3Dfalse%26config%3Dhttps%253A%252F%252Fraw.githubusercontent.com%252FACL4SSR%252FACL4SSR%252Fmaster%252FClash%252Fconfig%252FACL4SSR_Online.ini%26emoji%3Dtrue%26list%3Dfalse%26udp%3Dfalse%26tfo%3Dfalse%26expand%3Dtrue%26scv%3Dfalse%26fdn%3Dfalse%26sort%3Dfalse%26new_name%3Dtrue&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&new_name=true'\"";
 
       this.$axios
         .post(duan, data, {
