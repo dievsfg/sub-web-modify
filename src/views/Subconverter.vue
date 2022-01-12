@@ -970,11 +970,7 @@ export default {
 
 
       this.$axios
-        .post(duan, {"url":"http://zgb01.f3322.net:25500/sub?target=clash&url=https%3=false&sort=false&new_name=true"}, {
-          header: {
-            "Content-Type": "application/json"
-          }
-        })
+        .post(duan, {"url":"http://zgb01.f3322.net:25500/sub?target=clash&url=https%3=false&sort=false&new_name=true"})
         .then(res => {
           if (res.data.status === 200 && res.data.key !== "") {
             this.curtomShortSubUrl = res.data.key;
