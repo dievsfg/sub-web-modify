@@ -306,7 +306,7 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
-         "自建":"https://sl.diev.ml",
+         "自建":"https://sl.diev.ml/short",
          "v1.mk":"https://v1.mk/short",
          "d1.mk":"https://d1.mk/short",
          "dlj.tf":"https://dlj.tf/short",
@@ -696,7 +696,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "http://zgb01.f3322.net:25500/sub?",
-        shortType: "https://v1.mk/short",
+        shortType: "https://sl.diev.ml/short",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
         includeRemarks: "",
