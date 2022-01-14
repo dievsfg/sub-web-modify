@@ -968,13 +968,19 @@ export default {
       
       this.loading = true;
 
+      let data = new FormData();
+      data.append("longUrl", btoa(this.customSubUrl));
 
       this.$axios
-        .post(duan, {"url":"http://zgb01.f3322.net:25500/sub?target=clash&url=https%3=false&sort=false&new_name=true"})
+        .post(duan, data, {
+          header: {
+            "Content-Type": "application/form-data; charset=utf-8"
+          }
+        })
         .then(res => {
-          if (res.data.status === 200 && res.data.key !== "") {
-            this.curtomShortSubUrl = res.data.key;
-            this.$copyText(res.data.key);
+          if (res.data.Code === 1 && res.data.ShortUrl !== "") {
+            this.curtomShortSubUrl = res.data.ShortUrl;
+            this.$copyText(res.data.ShortUrl);
             this.$message.success("短链接已复制到剪贴板");
           } else {
             this.$message.error("短链接获取失败：" + res.data.Message);
